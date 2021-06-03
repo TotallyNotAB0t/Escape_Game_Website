@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Page de reservation</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="style resa.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Dosis|Amatic+SC|Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- le menu -->
+  <input type="checkbox" id="sidebar-controller-check" />
+
+  <div class="page-wrapper">
+
+    <label for="sidebar-controller-check" id="sidebar-controller">
+      <div class="menu-btn" href="#">
+        <i class="fas fa-bars"></i>
+      </div>
+    </label>
+
+    <div class="sidebar">
+      <ul>
+        <li>
+          <h2 class="menu-title"> Menu </h2>
+        </li>
+        <li><a class="sidebar-text active" href="Page Nautilus.html">Page d'acceuil</a></li>
+        <li><a class="sidebar-text" href="#">Nos salles</a></li>
+        <li><a class="sidebar-text" href="#">Réserver</a></li>
+        <li><a class="sidebar-text" href="#">Agenda</a></li>
+        <li><a class="sidebar-text contact" href="mailto:Escape@contact.fr">Nous contacter</a></li>
+      </ul>
+    </div>
+
+
+
+    <div class="page-content">
+
+      <div class="mock"></div>
+
+    </div>
+    <!-- fin du menu -->
+    <div id="booking" class="section">
+      <div class="section-center">
+        <div class="container">
+          <div class="row">
+            <div class="booking-cta">
+              <h1>Réservez</h1>
+              <p>Faites votre choix parmi nos salles, choisissez le nombre de personne, l'heure, et amusez vous !
+              </p>
+            </div>
+            <div class="booking-form">
+              <form>
+                <div class="form-group">
+                  <span class="form-label">Entrez le nom de votre équipe</span>
+                  <input class="form-control" type="text" placeholder="Soyez inventifs !">
+                </div>
+                <div class="row">
+                  <div class="form-group">
+                    <span class="form-label">La Salle</span>
+                    <select class="form-control">
+                    <option>Sélectionnez votre salle</option>
+                    <option>Le Professeur</option>
+                    <option>Star Wars</option>
+                    <option>Tesla</option>
+                    <option>Le Nautilus</option>
+                    <option>Zombies</option>
+                  </select>
+                  </div>
+                  <div class="form-group">
+                    <span class="form-label">Date de la séance</span>
+                    <input class="form-control" type="datetime-local" name="date">
+                  </div>
+                  <div class="form-group">
+                    <form>
+                      <span class="form-label">Présence d'enfants ?</span>
+                      <input type="radio" name="enfant" value="Oui" checked> Oui
+                      <input type="radio" name="enfant" value="Non"> Non
+                    </form>
+                  </div>
+                  <div class="form-group">
+                    <span class="form-label">Nombre de personnes</span>
+                    <input class="form-control" type="number" name="quantity" min="2" max="5">
+                  </div>
+                  <div class="form-btn box">
+                    <a class="submit-btn" href="#popup1">Réserver</a>
+                  </div>
+                  <div id="popup1" class="overlay">
+                    <div class="popup">
+                      <h2>Votre commande a bien été enregistrée.</h2>
+                      <a class="close" href="#">&times;</a>
+                      <div class="content">
+                        Vous pouvez maintenant fermer cette fenêtre.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Ultimate Escape - Nautilus</title>
+  <link rel="stylesheet" href="style nautilus.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Dosis|Amatic+SC|Permanent+Marker|Rock+Salt|Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <!-- A remplir avec le meme header pour toutes les pages -->
+  </header>
+  <!-- le menu -->
+  <input type="checkbox" id="sidebar-controller-check" />
+  <div class="page-wrapper">
+    <label for="sidebar-controller-check" id="sidebar-controller">
+      <div class="menu-btn" href="#">
+        <i class="fas fa-bars"></i>
+      </div>
+    </label>
+    <div class="sidebar">
+      <ul>
+        <li>
+          <h2 class="menu-title"> Menu </h2>
+        </li>
+        <li><a class="sidebar-text active" href="#front">Page d'acceuil</a></li>
+        <li><a class="sidebar-text" href="#">Nos salles</a></li>
+        <li><a class="sidebar-text" href="Page resa.html">Réserver</a></li>
+        <li><a class="sidebar-text" href="#">Agenda</a></li>
+        <li><a class="sidebar-text contact" href="mailto:Ultimate.Escape@contact.fr">Nous contacter</a></li>
+      </ul>
+    </div>
+
+    <div class="page-content" id="front">
+      <!-- fin du menu -->
+      <main>
+        <section id="IntroSalle">
+          <div class="section-interieure">
+            <img src="images/poisson.jpg" class="Icone-png" alt="poisson">
+            <h1>Prêt à descendre dans les abysses ?</h1>
+          </div>
+        </section>
+        <section id="DeveloppementSalle">
+          <div class="section-interieure">
+            <h2>Votre mission</h2>
+            <p>Votre vaisseau, le Nautilus, est en train de sombrer dans les profondeurs de l'océan, attaqué par une étrange créature. Vous et votre équipage devrez le réparer, car l'eau monte rapidement et il vous reste peu de temps avant la noyade...</p>
+            <div id="Caracteristiques">
+              <h3>Caractéristiques :</h3>
+              <h1 id="titre_info"> LA SALLE </h1>
+              <div class="note_texte"> Fouille : 3/5 </div>
+              <img class="images" src="images/petit poisson c.svg" alt="petit poisson">
+              <img class="images" src="images/petit poisson c.svg" alt="petit poisson">
+              <img class="images" src="images/petit poisson c.svg" alt="petit poisson">
+              <img class="images" src="images/petit poisson nc.svg" alt="poisson-vide">
+              <img class="images" src="images/petit poisson nc.svg" alt="poisson-vide">
+              <div class="note">
+                <div class="note_texte"> Manipulation : 4/5 </div>
+                <div id="note_barre_manipulation">
+                  <img class="images" src="images/algue c.svg" alt="algue">
+                  <img class="images" src="images/algue c.svg" alt="algue">
+                  <img class="images" src="images/algue c.svg" alt="algue">
+                  <img class="images" src="images/algue c.svg" alt="algue">
+                  <img class="images" src="images/algue nc.svg" alt="algue-vide">
+                </div>
+              </div>
+              <div class="note">
+                <div class="note_texte"> Réflexion : 4/5 </div>
+                <div id="note_barre_reflexion">
+                  <img class="images" src="images/sous marin c.svg" alt="sous-marin">
+                  <img class="images" src="images/sous marin c.svg" alt="sous-marin">
+                  <img class="images" src="images/sous marin c.svg" alt="sous-marin">
+                  <img class="images" src="images/sous marin c.svg" alt="sous-marin">
+                  <img class="images" src="images/sous marin nc.svg" alt="sous-marin-vide">
+                </div>
+              </div>
+              <div class="icone_info">
+                <div class="icone_info_texte"> 60' </div>
+                <div id="icone_info_image_temps"> <img class="images" src="images/chrono.svg" alt="chrono"></div>
+              </div>
+              <div class="icone_info">
+                <div class="icone_info_texte"> 5 Joueurs </div>
+                <div id="icone_info_image_joueurs"> <img class="images" src="images/cinq.PNG" alt="nombre de joueurs"></div>
+              </div>
+              <div id="langue_acces">
+                <div class="langue">
+                  <div class="langue_texte">Langues :</div>
+                  <div id="images_fr_en">
+                    <div id="langue_image_fr"> <img class="images" src="images/francais.svg" alt="français"></div>
+                    <div id="langue_image_eng"> <img class="images" src="images/anglais.svg" alt="anglais"></div>
+                  </div>
+                </div>
+                <div class="acces">
+                  <div id="acces_texte"> Accessible pour : </div>
+                  <div id="acces_enceinte_image"> <img class="images" src="images/enceinte.svg" alt="enceinte"></div>
+                  <div id="acces_sourd_image"> <img class="images" src="images/sourd.svg" alt="sourd"></div>
+                </div>
+              </div>
+            </div>
+			<h2> GALERIE </h2>
+            <div class="row">
+              <div class="column">
+                <img src="images/interieur1.jpg" alt="interieur 1" style="width:100%">
+                <img src="images/interieur2.jpg"alt="interieur 2" style="width:100%">
+              </div>
+              <div class="column">
+                <img src="images/interieur3.jpg" alt="interieur 3" style="width:100%">
+                <img src="images/exterieur1.jpg" alt="exterieur 1"style="width:100%">
+                <img src="images/interieur4.jpg" alt="exterieur 4" style="width:100%">
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="Reserver">
+          <div class="section-interieure">
+            <h2>Réservation</h2>
+            <p>Les réservations se font sur une autre page.</p>
+            <a id="Bouton" href="Page resa.html">Cliquez ici</a>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <i><b>©</b> 2019 All rights reserved. - <u>Privacy</u></i>
+      </footer>
+</body>
+
+</html>
